@@ -1,0 +1,30 @@
+/* Плагины */
+@import "plugins/normalize";
+@import "plugins/swiper";
+@import "plugins/datepicker.material";
+@import "plugins/green-audio-player";
+
+/* Общие */
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "global";
+
+/* Блоки */
+
+@import "blocks/container";
+@import "blocks/social";
+@import "blocks/header";
+@import "blocks/services";
+@import "blocks/service";
+@import "blocks/footer";
+@import "blocks/partners";
+@import "blocks/continue";
+@import "blocks/popup";
+@import "blocks/promo";
+@import "blocks/path";
+@import "blocks/banner";
+@import "blocks/transport";
+@import "blocks/transport-popup";
+

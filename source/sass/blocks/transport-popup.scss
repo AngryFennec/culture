@@ -1,0 +1,126 @@
+.transport-popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 22;
+
+  &--green {
+    .transport-popup__container {
+      background: #EFF6E8;
+    }
+  }
+
+  &--pink {
+    .transport-popup__container {
+      background: #FFE7EF;
+
+      & img {
+        margin-right: -114px;
+      }
+    }
+  }
+}
+
+.transport-popup__container {
+  @include center;
+  background: #fff;
+  width: 100%;
+  max-width: 574px;
+  min-height: 678px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow-y: scroll;
+  padding: 60px;
+  padding-right: 114px;
+
+  @media(max-width: 767px) {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    height: 100vh;
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 145%;
+    color: #868686;
+
+    @media(max-width: 767px) {
+      color: #373737;
+    }
+  }
+
+  & b {
+    font-size: 14px;
+    line-height: 145%;
+    font-weight: 500;
+    color: #373737;
+  }
+
+  & ul {
+    list-style: none;
+  }
+
+  & li {
+    font-size: 14px;
+    line-height: 145%;
+    color: #868686;
+    margin-bottom: 7px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #E40321;
+      top: 6px;
+      left: -16px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  & .transport-popup__strong-link {
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+    line-height: 145%;
+    font-weight: 500;
+    color: #373737;
+    text-decoration: underline;
+  }
+  //
+  //& img {
+  //  @media(max-width: 1023px) {
+  //    width: 100%;
+  //    height: auto;
+  //    object-fit: contain;
+  //  }
+  //}
+
+  & h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 135%;
+    color: #282828;
+    margin-bottom: 20px;
+
+    @media (max-width: 1023px) {
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 18px;
+    }
+  }
+
+}
+
+
+

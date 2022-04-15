@@ -1,0 +1,156 @@
+.popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 22;
+}
+
+.popup__container {
+  @include center;
+  background: #fff;
+  width: 100%;
+  max-width: 918px;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow-y: scroll;
+  padding: 60px;
+
+  @media(max-width: 767px) {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    height: 100vh;
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 145%;
+    color: #868686;
+
+    @media(max-width: 767px) {
+      color: #373737;
+    }
+  }
+
+  & img {
+    @media(max-width: 1023px) {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  & h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 135%;
+    color: #282828;
+    margin-bottom: 30px;
+
+    @media (max-width: 1023px) {
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.popup__audio {
+  display: flex;
+  margin-top: 44px;
+
+  & img {
+    width: 100%;
+    max-width:188px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 30px;
+
+    @media(max-width: 1023px) {
+      max-width: 142px;
+      margin-left: 18px;
+    }
+  }
+
+  & b {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 135%;
+    color: #282828;
+
+    @media(max-width: 1023px) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 145%;
+      color: #373737;
+    }
+  }
+
+  & .controls__total-time, & .controls__current-time, .volume {
+    display: none;
+  }
+
+  & .controls {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+
+  & .slider .gap-progress .pin {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+  }
+
+  & .controls .controls__slider {
+    height: 2px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  & .slider {
+    background: #D7EDC3;
+  }
+
+  & .controls .controls__slider .controls__progress .progress__pin {
+    top: -4px;
+  }
+
+  & .play-pause-btn {
+    background: url("../img/play.svg") no-repeat center;
+    width: 28px;
+    height: 28px;
+
+    & svg {
+      display: none;
+    }
+  }
+
+  & .green-audio-player {
+    display: block;
+    margin-top: 10px;
+    width: 260px;
+    min-width: 260px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 8px;
+    background: #EFF6E8;
+
+    @media(max-width: 1023px) {
+      width: 193px;
+      min-width: 193px;
+    }
+  }
+}
+
+.popup__audio-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
