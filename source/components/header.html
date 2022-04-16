@@ -25,21 +25,20 @@
     <div class="banner__container container">
       <p>Добро пожаловать в</p>
       <img src="img/banner-logo.svg" alt="лого">
-      <p>проект для тех, кто приехал в город ненадолго, но хочет его узнать поближе</p>
+      <p>проект для тех, кто приехал в город ненадолго, но&nbsp;хочет его узнать поближе</p>
       <div class="banner__form">
         <form>
-          <input type="text" id="datepicker" readonly placeholder="Дата">
-          <select id="select">
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
-          </select>
-<!--          <select name="quantity">Количество-->
-<!--            <option value="1">1</option>-->
-<!--            <option value="2" selected>2</option>-->
-<!--            <option value="3">3</option>-->
-<!--            <option value="4">4</option>-->
-<!--          </select>-->
+          <input type="text" id="datepicker" readonly placeholder="Дата &#9662">
+          <div id="dd" class="wrapper-dropdown" tabindex="1">
+            <input class="visually-hidden" name="select" id="select-input">
+            <span>Кол-во людей &#9662;</span>
+            <ul class="dropdown">
+              <li><a>1</a></li>
+              <li><a>2</a></li>
+              <li><a>3</a></li>
+              <li><a>4</a></li>
+            </ul>
+          </div>
           <button type="submit">Записаться</button>
         </form>
       </div>

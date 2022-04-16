@@ -5,7 +5,7 @@
   background: url("../img/banner-back.png") no-repeat center;
 
   @media(max-width: 767px) {
-    background: url("../img/banner-back.png") no-repeat -1050px -200px;
+    background: url("../img/banner-back.png") no-repeat -1120px -70px;
   }
 
     &::before {
@@ -38,7 +38,7 @@
 
 .header__container {
   display: flex;
-  padding: 74px 0 120px;
+  padding: 78px 0 120px;
   align-items: center;
   position: relative;
   z-index: 3;
@@ -74,8 +74,10 @@
     align-items: center;
     justify-content: center;
     padding: 30px 27px;
-    z-index: 20;
+    z-index: 25;
     border-radius: 16px;
+    position: absolute;
+    left: 11px;
 
     & li {
       display: flex;
@@ -190,6 +192,8 @@
 
   @media(max-width: 1023px) {
     display: block;
+    right: 14px;
+    top: 41px;
   }
 }
 
@@ -208,3 +212,5 @@
 .header__menu_active {
   display: flex;
 }
+
+

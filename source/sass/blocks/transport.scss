@@ -50,6 +50,7 @@
 
     @media(max-width: 900px) {
       font-size: 30px;
+      margin-bottom: 16px;
     }
   }
 
@@ -58,11 +59,17 @@
     line-height: 145%;
     font-weight: 400;
     color: #fff;
+    display: block;
     margin: 0;
+    padding-top: 26px;
+    padding-left: 20px;
+    padding-right: 10px;
 
     @media(max-width: 900px) {
       grid-row: 4;
       font-size: 14px;
+      padding-top: 0;
+      padding-left: 0;
     }
 
     & a {
@@ -145,6 +152,7 @@
       line-height: 145%;
       font-weight: 700;
       color: #373737;
+      padding-left: 6px;
 
       @media(max-width: 900px) {
         font-size: 18px;
