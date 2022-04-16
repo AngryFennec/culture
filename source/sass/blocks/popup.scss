@@ -36,8 +36,27 @@
     top: 0;
     right: -46px;
 
+    @media(max-width: 1023px) {
+      display: flex;
+      top: 33px;
+      right: 11px;
+      width: 78px;
+      padding: 0;
+      justify-content: flex-start;
+      background: transparent url("../img/close-mob.svg") no-repeat 100% 6px;
+    }
+
     & span {
       display: none;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 145%;
+      color: #373737;
+      align-self: center;
+
+      @media(max-width: 1023px) {
+        display: block!important;
+      }
     }
   }
 

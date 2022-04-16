@@ -70,10 +70,10 @@
     flex-direction: column;
     background: #fff url(../img/menu-back.png) no-repeat bottom left;
     width: calc(100% - 22px);
-    margin: 130px auto 0;
+    margin: 110px auto 0;
     align-items: center;
     justify-content: center;
-    padding: 30px 27px;
+    padding: 30px 27px 40px;
     z-index: 25;
     border-radius: 16px;
     position: absolute;
@@ -87,7 +87,6 @@
       width: 100%;
       margin-top: 10px;
       margin-bottom: 10px;
-      background: #fff;
     }
 
     & a {
@@ -99,8 +98,6 @@
       text-align: center;
       font-weight: 700;
       width: 100%;
-      background: #fff;
-
     }
   }
 }
@@ -203,8 +200,8 @@
   padding: 0;
   cursor: pointer;
   display: none;
-  right: 20px;
-  top: 61px;
+  right: 14px;
+  top: 41px;
   z-index: 999;
   position: absolute;
 }
